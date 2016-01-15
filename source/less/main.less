@@ -1,0 +1,89 @@
+h1[class*="title"]{
+	text-transform: uppercase;
+	font-weight: 400;
+}
+.about-us {
+	background: url(../img/mac-slide1.png) no-repeat 10% 5%, url(../img/mac.png) no-repeat 10% 50% ;
+	min-height: 610px;
+	color: @font-color--black;
+	&__right-side {
+		width: 410px;
+		min-height: 410px;
+		float: right;
+	}
+	&__tilte--sm {
+		font-size: @font-size--title-sm;
+		margin-bottom: 20px;
+	}
+	&__tilte {
+		font-size: @font-size--title-md;
+		margin-bottom: 50px;
+	}
+	&__desc {
+		font-size: @font-size--md;
+		margin-bottom: 50px;
+	}
+	&__features-list {
+		margin-bottom: 50px;
+		padding-left: 15px;
+		.features-list__item {
+			margin-bottom: 20px;
+		}
+	}
+	&__btn {
+	display: block;
+    width: 190px;
+	height: 50px;
+    box-sizing: border-box;
+    background: transparent;
+    border: 1px solid #111;
+    border-radius: 5px;
+	}
+}
+.our-team {
+	background-color: @bg-color--dark;
+	min-height: 730px;
+	&__title {
+		text-align: center;
+		padding-top: 90px;
+		margin-bottom: 110px;
+	}
+	&-slider {
+
+	}
+}
+.slider__slide{
+	display: flex;
+	justify-content: space-between;
+	align-itemns: center;
+	&:nth-of-type(2),&:nth-of-type(3) {
+	display: none;		
+}	
+}
+.slider__item {
+	width: 260px;
+	min-height: 300px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    &:nth-of-type(1) .worker-foto {
+		background: url(../img/JasStat.jpg) no-repeat 50% 50%;
+	}
+	&:nth-of-type(2) .worker-foto {
+		background: url(../img/VanDamme.jpg) no-repeat 25% 50%;
+	}
+	&:nth-of-type(3) .worker-foto {
+		background: url(../img/Sylve.jpg) no-repeat 50% 0%;
+	}
+	&:nth-of-type(4) .worker-foto {
+		background: url(../img/Jet.jpg) no-repeat 50% 50%;
+	}
+}
+.worker-foto {
+	background-color: @font-color--gray;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	
+}
