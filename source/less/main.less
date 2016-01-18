@@ -6,6 +6,7 @@ h1[class*="title"]{
 	background: url(../img/mac-slide1.png) no-repeat 10% 5%, url(../img/mac.png) no-repeat 10% 50% ;
 	min-height: 610px;
 	color: @font-color--black;
+	margin-top: 90px;
 	&__right-side {
 		width: 410px;
 		min-height: 410px;
@@ -86,4 +87,166 @@ h1[class*="title"]{
 	width: 100px;
 	height: 100px;
 	
+}
+.services {
+	color: @font-color--black;
+	&__title {
+		text-align: center;
+		padding-top: 90px;
+		margin-bottom: 90px;
+	}
+	&-desc {
+		text-align: center;
+		margin-bottom: 90px;
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-itemns: center;
+	}
+	&__item {
+		width: 260px;
+		min-height: 300px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+	}
+}
+.service {
+	&-logo {
+	border: 5px solid @color--carroty;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	}
+	&-name {
+		font-size: @font-size--link;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+}
+.our-clients {
+	background-color: @bg-color--dark;
+	min-height: 515px;
+	&__title {
+		text-align: center;
+		padding-top: 90px;
+		margin-bottom: 90px;
+	}
+	&__slider {
+		list-style-type: none;
+		
+	}
+	&__slide {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+.our-work {
+	color: @font-color--black;
+	min-height: 500px;
+	&__title {
+		text-align: center;
+		padding-top: 90px;
+		margin-bottom: 90px;
+	}
+	&__desc {
+		text-align: center;
+		margin-bottom: 90px;
+	}
+	&__samples {
+	    margin: 0 auto;
+		min-height: 780px;
+		max-width: 1150px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-content: space-between;
+		margin-bottom: 100px;
+	}
+}
+.filter {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	&-by {
+		text-transform: uppercase;
+	}
+	&-type {
+		text-decoration: none;
+
+	}
+}
+.clients-testimonials {
+	background-color: @bg-color--dark;
+	min-height: 565px;
+	&__title {
+		text-align: center;
+		padding-top: 90px;
+		margin-bottom: 90px;
+	}
+	&__desc {
+		text-align: center;
+		text-decoration: uppercase;
+		margin-bottom: 90px;
+	}
+}
+.testi-slider {
+	list-style-type: none;
+}
+.clients-testimonials__item {
+	text-align: center;
+}
+.clients-testimonials__item:not(:nth-child(1)) {
+	display: none;
+}
+.client-testimonial {
+	margin-bottom: 50px;
+	font-size: @font-size--md;
+	font-weight: @font-weight--bold;
+	text-transform: uppercase;
+}
+.contact-us {
+	color: @font-color--black;
+	min-height: 830px;
+	&__title {
+		text-align: center;
+		padding-top: 90px;
+		margin-bottom: 90px;
+	}
+	&__desc {
+		text-align: center;
+		text-decoration: uppercase;
+		margin-bottom: 90px;
+	}
+	&__form {
+		width: 760px;
+		min-height: 355px;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+.form__client-name-input-field,.form__client-email-input-field {
+	width: 360px;
+}
+.l-side-form,.r-side-form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 360px;
+}
+.center-form {
+	width: 700px;
+}
+.form__client-message-input-field {
+	width: 700px
+}
+.footer {
+	background-color: @bg-color--dark;
+	min-height: 90px;
 }

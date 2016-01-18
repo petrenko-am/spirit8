@@ -5,7 +5,7 @@
 	<title>SPIRIT8</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,400italic,700" >
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,11 +14,11 @@
 			<a href="" class="main-nav__logo-link">SPIRIT8</a>
 			<ul>
 				<li><a href="" class="main-nav__link">home</a></li>
-				<li><a href="" class="main-nav__link">about</a></li>
-				<li><a href="" class="main-nav__link">services</a></li>
-				<li><a href="" class="main-nav__link">portfolio</a></li>
-				<li><a href="" class="main-nav__link">testimonials</a></li>
-				<li><a href="" class="main-nav__link">contacts</a></li>
+				<li><a href="#about" class="main-nav__link">about</a></li>
+				<li><a href="#services" class="main-nav__link">services</a></li>
+				<li><a href="#portfolio" class="main-nav__link">portfolio</a></li>
+				<li><a href="#testi" class="main-nav__link">testimonials</a></li>
+				<li><a href="#contacts" class="main-nav__link">contacts</a></li>
 			</ul>
 		</nav>
 		<div class="header-title">
@@ -28,7 +28,7 @@
 		<a href="#" id="scrolldown"></a>
 	</header>
 	<main>
-		<section class="about-us container">
+		<section class="about-us container" id="about">
 			<div class="about-us__right-side">
 				<div class="about-us__title--sm">about us</div>
 				<h1 class="about-us__title">Some words <strong>about us</strong></h1>
@@ -127,32 +127,34 @@
 			<a href="" class="our-team-select-btns slider-btns"></a>
 			<a href="" class="our-team-select-btns slider-btns"></a>
 		</section>
-		<section class="services container">
-			<h1 class="services__title title-underline"></h1>
+		<section class="services container" id="services">
+			<h1 class="services__title title-underline">take a look at <strong>our services</strong></h1>
 			<p class="services-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque vero voluptas magni totam voluptates, quod repudiandae modi expedita culpa quo doloremque, laudantium eveniet odit ut quaerat hic cumque aut ipsam?</p>
-			<div class="services__item">
-				<div class="service-logo"></div>
-				<div class="servise-name"></div>
-				<div class="service-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, voluptates.</div>
-			</div>
-			<div class="services__item">
-				<div class="service-logo"></div>
-				<div class="servise-name"></div>
-				<div class="service-desc">Aut incidunt aliquam assumenda facilis laborum illo repellendus, debitis optio?</div>
-			</div>
-			<div class="services__item">
-				<div class="service-logo"></div>
-				<div class="servise-name"></div>
-				<div class="service-desc">Officia consequatur maxime vero, eligendi ullam sed possimus autem, quis.</div>
-			</div>
-			<div class="services__item">
-				<div class="service-logo"></div>
-				<div class="servise-name"></div>
-				<div class="service-desc">Autem, nemo temporibus atque soluta cum molestiae distinctio ut ex.</div>
+			<div class="services__row">
+				<div class="services__item">
+					<div class="service-logo"></div>
+					<div class="service-name">Web design</div>
+					<div class="service-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, voluptates.</div>
+				</div>
+				<div class="services__item">
+					<div class="service-logo"></div>
+					<div class="service-name">Mobile apps</div>
+					<div class="service-desc">Aut incidunt aliquam assumenda facilis laborum illo repellendus, debitis optio?</div>
+				</div>
+				<div class="services__item">
+					<div class="service-logo"></div>
+					<div class="service-name">PHOTOGRAPHY</div>
+					<div class="service-desc">Officia consequatur maxime vero, eligendi ullam sed possimus autem, quis.</div>
+				</div>
+				<div class="services__item">
+					<div class="service-logo"></div>
+					<div class="service-name">marketing</div>
+					<div class="service-desc">Autem, nemo temporibus atque soluta cum molestiae distinctio ut ex.</div>
+				</div>
 			</div>
 		</section>
 		<section class="our-clients container">
-			<h1 class="our-clients__title title-underline"></h1>
+			<h1 class="our-clients__title title-underline">some of <strong>our clients</strong></h1>
 			<ul class="our-clients__slider">
 				<li class="our-clients__slide">
 					<a href="" class="slide-item__link"><img src="" alt="chanel" class="slide-item__link-img"></a>
@@ -180,11 +182,11 @@
 			<a href="" class="select-btns-slider-clients slider-btns"></a>
 			<a href="" class="select-btns-slider-clients slider-btns"></a>
 		</section>
-		<section class="our-work container">
-			<h1 class="our-work__title title-underline"></h1>
-			<p class="our-work__desc"></p>
+		<section class="our-work container" id="portfolio">
+			<h1 class="our-work__title title-underline">take a look at our work</h1>
+			<p class="our-work__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim illo et necessitatibus debitis incidunt voluptate, dignissimos, ipsum odio doloribus? Ab ea tempore, quae, necessitatibus veritatis corporis molestias. Praesentium, consequatur, asperiores.</p>
 			<div class="filter">
-				<div class="filter-by"></div>
+				<div class="filter-by">filter by type</div>
 				<div class="filter-type">
 					<a href="" class="filter-type__item">All</a>
 					<a href="" class="filter-type__item">Web Design</a>
@@ -193,59 +195,66 @@
 				</div>
 			</div>
 			<div class="our-work__samples">
-				<img src="" alt="our work" class="samples-item">
-				<img src="" alt="our work" class="samples-item">
-				<img src="" alt="our work" class="samples-item">
-				<img src="" alt="our work" class="samples-item">
-				<img src="" alt="our work" class="samples-item">
-				<img src="" alt="our work" class="samples-item">
-				<img src="" alt="our work" class="samples-item">
-				<img src="" alt="our work" class="samples-item">
-				<img src="" alt="our work" class="samples-item">
-				<img src="" alt="our work" class="samples-item">
-				<img src="" alt="our work" class="samples-item">
-				<img src="" alt="our work" class="samples-item">
+				<img src="http://placehold.it/260x240" alt="our work" class="samples-item">
+				<img src="http://placehold.it/260x240" alt="our work" class="samples-item">
+				<img src="http://placehold.it/260x240" alt="our work" class="samples-item">
+				<img src="http://placehold.it/260x240" alt="our work" class="samples-item">
+				<img src="http://placehold.it/260x240" alt="our work" class="samples-item">
+				<img src="http://placehold.it/260x240" alt="our work" class="samples-item">
+				<img src="http://placehold.it/260x240" alt="our work" class="samples-item">
+				<img src="http://placehold.it/260x240" alt="our work" class="samples-item">
+				<img src="http://placehold.it/260x240" alt="our work" class="samples-item">
+				<img src="http://placehold.it/260x240" alt="our work" class="samples-item">
+				<img src="http://placehold.it/260x240" alt="our work" class="samples-item">
+				<img src="http://placehold.it/260x240" alt="our work" class="samples-item">
 			</div>
 		</section>
-		<section class="clients-testimonials">
-			<h1 class="clients-testimonials__title title-underline"></h1>
+		<section class="clients-testimonials container" id="testi">
+			<h1 class="clients-testimonials__title title-underline"><strong>our clients'</strong> testimonials</h1>
 			<ul class="testi-slider clients-testimonials__list">
 				<li class="clients-testimonials__item">
-					<p class="client-testimonial"></p>
-					<div class="client-name"></div>
-					<div class="client-from"></div>
+					<p class="client-testimonial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas dicta deserunt officia quasi, omnis obcaecati nisi mollitia. Quod maiores quam architecto nisi dolore suscipit molestias maxime, cum sunt consectetur. Quaerat.</p>
+					<span class="client-name">Dean Martin</span>,
+					<span class="client-from">CEO Acme Inc</span>
 				</li>
 				<li class="clients-testimonials__item">
-					<p class="client-testimonial"></p>
-					<div class="client-name"></div>
-					<div class="client-from"></div>
+					<p class="client-testimonial">dolor sit amet, consectetur adipisicing elit. In, blanditiis, dolorem. Possimus reiciendis, accusamus laudantium quaerat! Ratione odio, doloribus nesciunt pariatur vitae, placeat quaerat nobis optio aperiam aut necessitatibus sed.
+					<2></2></p>
+					<span class="client-name">Immanuel Kant</span>,
+					<span class="client-from">Königsberg, Prussia</span>
 				</li>
 				<li class="clients-testimonials__item">
-					<p class="client-testimonial"></p>
-					<div class="client-name"></div>
-					<div class="client-from"></div>
+					<p class="client-testimonial">Lorem ipsum dolor sit amet.</p>
+					<span class="client-name">user name 3</span>,
+					<span class="client-from">neverland</span>
 				</li>
 			</ul>
 			<a href="" class="testi-slider__btns slider-btns"></a>
 			<a href="" class="testi-slider__btns slider-btns"></a>
 			<a href="" class="testi-slider__btns slider-btns"></a>
 		</section>
-		<section class="contact-us container">
-			<h1 class="contact-us__title title-underline"></h1>
-			<p class="contact-us_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, minima, consequuntur. Pariatur repudiandae natus inventore consectetur, illum ducimus facilis neque!</p>
+		<section class="contact-us container" id="contacts">
+			<h1 class="contact-us__title title-underline">feel free to <strong>contact us</strong></h1>
+			<p class="contact-us__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, minima, consequuntur. Pariatur repudiandae natus inventore consectetur, illum ducimus facilis neque!</p>
 			<form class="contact-us__form">
-				<label for="client-name" class="form__client-name"></label>
-				<input type="text" class="form__client-name-input-field" id="client-name">
-				<label for="client-email" class="form__client-email"></label>
-				<input type="text" class="form__client-email-input-field" id="client-email">
-				<label for="client-message" class="form__client-message"></label>
-				<input type="text" class="form__client-message-input-field" id="client-message">
+				<div class="l-side-form">
+					<label for="client-name" class="form__client-name">name</label>
+					<input type="text" class="form__client-name-input-field" id="client-name">
+				</div>
+				<div class="r-side-form">
+					<label for="client-email" class="form__client-email">email address</label>
+					<input type="text" class="form__client-email-input-field" id="client-email">
+				</div>
+				<div class="center-form">
+					<label for="client-message" class="form__client-message">message</label>
+					<input type="text" class="form__client-message-input-field" id="client-message">
+				</div>
 				<button type="submit" class="btn">SEND</button>
 			</form>
 		</section>
 	</main>
-	<footer>
-		<div class="copyright container"></div>
+	<footer class="footer container">
+		<div class="copyright">ALL RIGHTS RESERVED. COPYRIGHT © 2014 SPIRIT8</div>
 		<div class="social-btns">
 			<a href="" class="social-btn"></a>
 			<a href="" class="social-btn"></a>
