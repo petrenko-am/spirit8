@@ -14,7 +14,10 @@ body {
   min-width: 1280px;
 }
 .container {
-  padding: 0 8%;
+  padding: 0 12%;
+}
+.content {
+  max-width: 1300px;
 }
 .btn {
   background-color: #fcac45;
@@ -62,6 +65,12 @@ body {
   font-size: 24px;
   font-weight: 700;
 }
+.main-nav__logo-link:hover {
+  color: #fcac45;
+}
+.main-nav__logo-link:active {
+  color: #808080;
+}
 .main-nav ul {
   list-style-type: none;
   display: -webkit-flex;
@@ -75,7 +84,7 @@ body {
           align-items: center;
 }
 .main-nav ul li {
-  margin-right: 25px;
+  margin-right: 15px;
 }
 .main-nav ul li:last-of-type {
   margin-right: 0;
@@ -86,6 +95,34 @@ body {
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 0 10px;
+  position: relative;
+}
+.main-nav__link:hover {
+  color: #cccccc;
+}
+.main-nav__link:active {
+  color: #808080;
+}
+.main-nav__link:hover:before {
+  border-bottom: 3px solid #444444;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  width: 50%;
+  z-index: 1;
+}
+.main-nav__link:hover:after {
+  border-bottom: 3px solid #fcac45;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 50%;
+  z-index: 1;
 }
 #scrolldown {
   margin: 0 auto;
@@ -182,8 +219,45 @@ h1[class*="title"] {
   text-transform: uppercase;
   font-weight: 400;
 }
+.title-underline {
+  position: relative;
+}
+.title-underline:before {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 144px;
+  width: 100px;
+  z-index: 1;
+  border-bottom: 4px solid #fcac45;
+  box-shadow: 0 0 1px 0 #fed9a9;
+}
+.title-underline:after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 164px;
+  width: 65px;
+  z-index: 1;
+  border-bottom: 4px solid #fdce90;
+  box-shadow: 0 0 1px 0 #fee4c2;
+}
+.slider-btns {
+  width: 9px;
+  height: 9px;
+  display: block;
+  background-color: #fff;
+}
 .about-us {
-  background: url(../img/mac-slide1.png) no-repeat 10% 5%, url(../img/mac.png) no-repeat 10% 50%;
+  background: url(../img/mac-img.png) no-repeat 18% 50%;
   min-height: 610px;
   color: #000;
   margin-top: 90px;
@@ -193,24 +267,71 @@ h1[class*="title"] {
   min-height: 410px;
   float: right;
 }
-.about-us__tilte--sm {
+.about-us__title--sm {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 400;
 }
-.about-us__tilte {
+.about-us__title {
   font-size: 34px;
   margin-bottom: 50px;
+  position: relative;
+}
+.about-us__title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 51px;
+  width: 100px;
+  z-index: 1;
+  border-bottom: 4px solid #fcac45;
+  box-shadow: 0 0 1px 0 #fed9a9;
 }
 .about-us__desc {
   font-size: 18px;
   margin-bottom: 50px;
+  color: #6c6c6c;
 }
 .about-us__features-list {
   margin-bottom: 50px;
   padding-left: 15px;
+  list-style-type: none;
+  color: #6c6c6c;
 }
 .about-us__features-list .features-list__item {
   margin-bottom: 20px;
+  position: relative;
+}
+.about-us__features-list .features-list__item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -20px;
+  top: 5px;
+  border: 2px solid #6c6c6c;
+  border-radius: 50%;
+}
+.about-us__features-list .features-list__item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  left: -16px;
+  top: 9px;
+  background-color: #6c6c6c;
+  border: 2px solid #6c6c6c;
+  border-radius: 50%;
+}
+.about-us .feature-name {
+  font-size: 18px;
+  font-weight: 700;
 }
 .about-us__btn {
   display: block;
@@ -218,8 +339,13 @@ h1[class*="title"] {
   height: 50px;
   box-sizing: border-box;
   background: transparent;
-  border: 1px solid #111;
-  border-radius: 5px;
+  border: 1px solid #6c6c6c;
+  border-radius: 3px;
+  padding: 15px 25px;
+  text-transform: uppercase;
+  color: #6c6c6c;
+  font-size: 12px;
+  text-align: center;
 }
 .our-team {
   background-color: #111;

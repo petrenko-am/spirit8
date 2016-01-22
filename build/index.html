@@ -29,16 +29,18 @@
 	</header>
 	<main>
 		<section class="about-us container" id="about">
-			<div class="about-us__right-side">
-				<div class="about-us__title--sm">about us</div>
-				<h1 class="about-us__title">Some words <strong>about us</strong></h1>
-				<p class="about-us__desc">We love building and rebuilding brands through our  specific skills. Using colour, fonts, and illustration, we brand companies in a way they will never forget.</p>
-				<ul class="about-us__features-list">
-					<li class="features-list__item"><span class="feature-name">Mission</span>We deliver uniqueness and quality</li>
-					<li class="features-list__item"><span class="feature-name">Skills</span>Delivering fast and excellent results</li>
-					<li class="features-list__item"><span class="feature-name">Clients</span>Satisfied clients thanks to our experience</li>
-				</ul>
-				<a href="#" class="btn about-us__btn"></a>
+			<div class="content">
+				<div class="about-us__right-side">
+					<div class="about-us__title--sm">about us</div>
+					<h1 class="about-us__title">Some words <strong>about us</strong></h1>
+					<p class="about-us__desc">We love building and rebuilding brands through our  specific skills. Using colour, fonts, and illustration, we brand companies in a way they will never forget.</p>
+					<ul class="about-us__features-list">
+						<li class="features-list__item"><span class="feature-name">Mission</span> - We deliver uniqueness and quality</li>
+						<li class="features-list__item"><span class="feature-name">Skills</span> - Delivering fast and excellent results</li>
+						<li class="features-list__item"><span class="feature-name">Clients</span> - Satisfied clients thanks to our experience</li>
+					</ul>
+					<a href="#" class="btn about-us__btn">Browse our work</a>
+				</div>
 			</div>
 		</section>
 		<section class="our-team container">
@@ -123,9 +125,14 @@
 					</div>
 				</li>
 			</ul>
-			<a href="" class="our-team-select-btns slider-btns"></a>
-			<a href="" class="our-team-select-btns slider-btns"></a>
-			<a href="" class="our-team-select-btns slider-btns"></a>
+			<input type="radio" id="btn_1" name="toggle" checked><!-- поменять name для всех слайдеров -->
+			<input type="radio" id="btn_2" name="toggle">
+			<input type="radio" id="btn_3" name="toggle">
+			<div class="slider_controls">
+				<label for="btn_1"></label>
+				<label for="btn_2"></label>
+				<label for="btn_3"></label>
+			</div>
 		</section>
 		<section class="services container" id="services">
 			<h1 class="services__title title-underline">take a look at <strong>our services</strong></h1>
@@ -178,9 +185,14 @@
 					<a href="" class="slide-item__link"><img src="" alt="" class="slide-item__link-img"></a>
 				</li>
 			</ul>
-			<a href="" class="select-btns-slider-clients slider-btns"></a>
-			<a href="" class="select-btns-slider-clients slider-btns"></a>
-			<a href="" class="select-btns-slider-clients slider-btns"></a>
+			<input type="radio" id="btn_1" name="toggle" checked>
+			<input type="radio" id="btn_2" name="toggle">
+			<input type="radio" id="btn_3" name="toggle">
+			<div class="slider_controls">
+				<label for="btn_1"></label>
+				<label for="btn_2"></label>
+				<label for="btn_3"></label>
+			</div>
 		</section>
 		<section class="our-work container" id="portfolio">
 			<h1 class="our-work__title title-underline">take a look at our work</h1>
@@ -229,9 +241,14 @@
 					<span class="client-from">neverland</span>
 				</li>
 			</ul>
-			<a href="" class="testi-slider__btns slider-btns"></a>
-			<a href="" class="testi-slider__btns slider-btns"></a>
-			<a href="" class="testi-slider__btns slider-btns"></a>
+			<input type="radio" id="btn_1" name="toggle" checked>
+			<input type="radio" id="btn_2" name="toggle">
+			<input type="radio" id="btn_3" name="toggle">
+			<div class="slider_controls">
+				<label for="btn_1"></label>
+				<label for="btn_2"></label>
+				<label for="btn_3"></label>
+			</div>
 		</section>
 		<section class="contact-us container" id="contacts">
 			<h1 class="contact-us__title title-underline">feel free to <strong>contact us</strong></h1>
