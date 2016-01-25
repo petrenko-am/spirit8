@@ -256,6 +256,29 @@ h1[class*="title"] {
   display: block;
   background-color: #fff;
 }
+.slider input[type=radio] {
+  position: absolute;
+  opacity: 0;
+}
+.slider-controls {
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+  width: 200px;
+  height: 10px;
+  margin-left: -100px;
+  text-align: center;
+  z-index: 1000;
+}
+.slider-controls label {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin: 0 3px;
+  background: white;
+  vertical-align: top;
+  cursor: pointer;
+}
 .about-us {
   background: url(../img/mac-img.png) no-repeat 18% 50%;
   min-height: 610px;
@@ -350,6 +373,7 @@ h1[class*="title"] {
 .our-team {
   background-color: #111;
   min-height: 730px;
+  position: relative;
 }
 .our-team__title {
   text-align: center;
@@ -369,6 +393,11 @@ h1[class*="title"] {
 .slider__slide:nth-of-type(3) {
   display: none;
 }
+#our-team__btn-1:checked ~ .slider-controls label[for="our-team__btn-1"],
+#our-team__btn-2:checked ~ .slider-controls label[for="our-team__btn-2"],
+#our-team__btn-3:checked ~ .slider-controls label[for="our-team__btn-3"] {
+  background: #fcac45;
+}
 .slider__item {
   width: 260px;
   min-height: 300px;
@@ -381,9 +410,9 @@ h1[class*="title"] {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .slider__item:nth-of-type(1) .worker-foto {
   background: url(../img/JasStat.jpg) no-repeat 50% 50%;
@@ -397,6 +426,32 @@ h1[class*="title"] {
 .slider__item:nth-of-type(4) .worker-foto {
   background: url(../img/Jet.jpg) no-repeat 50% 50%;
 }
+.our-team__slides .slider__slide:nth-child(2) .worker-foto {
+  background-image: none;
+  background-color: #fcac45;
+}
+.our-team__slides .slider__slide:nth-child(3) .worker-foto {
+  background-image: none;
+  background-color: #6c6c6c;
+}
+.slider__slide {
+  display: none;
+}
+#our-team__btn-1:checked ~ .our-team__slides .slider__slide:nth-child(1) {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#our-team__btn-2:checked ~ .our-team__slides .slider__slide:nth-child(2) {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+#our-team__btn-3:checked ~ .our-team__slides .slider__slide:nth-child(3) {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 .worker-foto {
   background-color: #6c6c6c;
   border-radius: 50%;
@@ -405,15 +460,18 @@ h1[class*="title"] {
 }
 .services {
   color: #000;
+  min-height: 735px;
 }
 .services__title {
   text-align: center;
   padding-top: 90px;
   margin-bottom: 90px;
 }
-.services-desc {
+.services__desc {
   text-align: center;
   margin-bottom: 90px;
+  color: #6c6c6c;
+  font-size: 16px;
 }
 .services__row {
   display: -webkit-flex;
@@ -422,7 +480,9 @@ h1[class*="title"] {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  align-itemns: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .services__item {
   width: 260px;
@@ -439,12 +499,18 @@ h1[class*="title"] {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
+  text-align: center;
 }
 .service-logo {
   border: 5px solid #fcac45;
   border-radius: 50%;
   width: 100px;
   height: 100px;
+}
+.service-logo svg {
+  width: 75px;
+  height: 60px;
+  padding: 20% 0;
 }
 .service-name {
   font-size: 24px;

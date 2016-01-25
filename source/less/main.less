@@ -40,6 +40,31 @@ h1[class*="title"]{
 	display: block;
 	background-color: @bg-color--light; 
 }
+.slider {
+	& input[type=radio] {
+	position: absolute;
+	opacity: 0;
+	}
+} 
+.slider-controls{
+	position: absolute;
+	bottom: 95px;
+	left: 50%;
+	width: 200px;
+	height: 10px;
+	margin-left: -100px;
+	text-align: center;
+	z-index: 1000;
+}
+.slider-controls label{
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	margin: 0 3px;
+	background: white;
+	vertical-align: top;
+	cursor: pointer;
+}
 .about-us {
 	background: url(../img/mac-img.png) no-repeat 18% 50%;
 	min-height: 610px;
@@ -134,6 +159,7 @@ h1[class*="title"]{
 .our-team {
 	background-color: @bg-color--dark;
 	min-height: 730px;
+	position: relative;
 	&__title {
 		text-align: center;
 		padding-top: 90px;
@@ -149,7 +175,12 @@ h1[class*="title"]{
 	align-itemns: center;
 	&:nth-of-type(2),&:nth-of-type(3) {
 	display: none;		
-}	
+	}	
+}
+#our-team__btn-1:checked ~ .slider-controls label[for="our-team__btn-1"],
+#our-team__btn-2:checked ~ .slider-controls label[for="our-team__btn-2"],
+#our-team__btn-3:checked ~ .slider-controls label[for="our-team__btn-3"] { 
+	background: @color--carroty;
 }
 .slider__item {
 	width: 260px;
@@ -157,7 +188,7 @@ h1[class*="title"]{
 	display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     &:nth-of-type(1) .worker-foto {
 		background: url(../img/JasStat.jpg) no-repeat 50% 50%;
 	}
@@ -171,6 +202,30 @@ h1[class*="title"]{
 		background: url(../img/Jet.jpg) no-repeat 50% 50%;
 	}
 }
+.our-team__slides .slider__slide:nth-child(2) {
+	.worker-foto {
+		background-image: none;
+		background-color: @color--carroty;
+	}
+}
+.our-team__slides .slider__slide:nth-child(3) {
+	.worker-foto {
+		background-image: none;
+		background-color: @font-color--gray;
+	}
+}
+.slider__slide{
+	display: none;
+}
+#our-team__btn-1:checked ~ .our-team__slides .slider__slide:nth-child(1) { 
+	display: flex;
+}
+#our-team__btn-2:checked ~ .our-team__slides .slider__slide:nth-child(2) { 
+	display: flex;
+}
+#our-team__btn-3:checked ~ .our-team__slides .slider__slide:nth-child(3) { 
+	display: flex;
+}
 .worker-foto {
 	background-color: @font-color--gray;
 	border-radius: 50%;
@@ -180,19 +235,22 @@ h1[class*="title"]{
 }
 .services {
 	color: @font-color--black;
+	min-height: 735px;
 	&__title {
 		text-align: center;
 		padding-top: 90px;
 		margin-bottom: 90px;
 	}
-	&-desc {
+	&__desc {
 		text-align: center;
 		margin-bottom: 90px;
+		color: @font-color--gray;
+		font-size: @font-size--smd;
 	}
 	&__row {
 		display: flex;
 		justify-content: space-between;
-		align-itemns: center;
+		align-items: center;
 	}
 	&__item {
 		width: 260px;
@@ -201,6 +259,7 @@ h1[class*="title"]{
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
+		text-align: center;
 	}
 }
 .service {
@@ -209,6 +268,11 @@ h1[class*="title"]{
 	border-radius: 50%;
 	width: 100px;
 	height: 100px;
+		& svg {
+		width: 75px;
+		height: 60px;
+		padding: 20% 0;
+		}
 	}
 	&-name {
 		font-size: @font-size--link;
