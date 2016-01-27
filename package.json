@@ -4,7 +4,7 @@
   "description": "test_template",
   "main": "index.js",
   "dependencies": {
-	"autoprefixer": "6.1.x",
+    "autoprefixer": "6.1.x",
     "grunt": "0.4.x",
     "grunt-contrib-clean": "0.7.x",
     "grunt-contrib-copy": "0.8.x",
@@ -15,8 +15,10 @@
     "grunt-contrib-watch": "0.6.x",
     "grunt-csscomb": "^3.1.0",
     "grunt-postcss": "0.7.x",
-    "load-grunt-tasks": "3.3.x"},
+    "load-grunt-tasks": "3.3.x"
+  },
   "devDependencies": {
+    "grunt-contrib-imagemin": "^1.0.0",
     "grunt-contrib-less": "^1.1.0"
   },
   "scripts": {

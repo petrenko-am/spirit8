@@ -63,7 +63,7 @@ module.exports = function(grunt) {
         },
         files: [{
           expand: true,
-          src: ["build/img/**/*.{png,jpg,gif,svg}"]
+          src: ["build/img/**/*.{png,jpg,gif,svg}"],
         }]
       }
     },
@@ -78,17 +78,6 @@ module.exports = function(grunt) {
 			"source/js/script.js"
         ],
         dest: "build/js/script.js"
-      }
-    },
-
-    uglify: {
-      js: {
-        files: {
-          "build/js/script.min.js": [
-            "source/js/vendors/mustache-2.2.0.min.js",
-            "source/js/script.js"
-          ]
-        }
       }
     },
 
@@ -111,11 +100,6 @@ module.exports = function(grunt) {
     }
   };
 
-  
-
-
-  // Не редактируйте эту строку
-
   grunt.initConfig(config);
   
   grunt.registerTask("build", [
@@ -124,7 +108,6 @@ module.exports = function(grunt) {
     "less",
     "postcss",
     "cssmin",
-    "imagemin",
-    "uglify"
+    "imagemin"
   ]);  
  };

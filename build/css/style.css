@@ -202,18 +202,18 @@ body {
   transition: all 0.25s ease-in-out;
 }
 #scrolldown:hover {
-  color: #D4D4D4;
+  color: #d4d4d4;
 }
 #scrolldown:hover span:before {
-  border-color: #D4D4D4;
+  border-color: #d4d4d4;
 }
 #scrolldown:hover:before {
   background-color: #fff;
-  border-color: #D4D4D4;
+  border-color: #d4d4d4;
 }
 #scrolldown:hover:after {
   background-color: #bd183b;
-  border-color: #D4D4D4;
+  border-color: #d4d4d4;
 }
 h1[class*="title"] {
   text-transform: uppercase;
@@ -785,6 +785,3 @@ h1[class*="title"] {
 .social-btn svg:hover {
   fill: #fcac45;
 }
-/*
-@import "form.less";
-@import "footer.less";*/

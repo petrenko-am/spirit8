@@ -1,0 +1,26 @@
+.footer {
+  background-color: @bg-color--dark;
+  min-height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: @font-color--gray;
+}
+.social-btn {
+  display: inline-block;
+  border: 2px solid @font-color--gray;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  & svg {
+    width: 15px;
+    height: 15px;
+    fill: @font-color--gray;
+    display: block;
+    padding: 25%;
+    &:hover {
+      fill: @color--carroty;
+    }
+  }
+}
